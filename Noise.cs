@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Diagnostics;
 
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-
-
-namespace Nature
+namespace FractalPerlin
 {
+	struct Vector2
+	{
+		public Vector2(float x, float y) {
+			X = x;
+			Y = y;
+		}
+		public float X;
+		public float Y;
+	};
+
 	public class Noise
 	{
 		private int[] hash = {
